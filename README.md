@@ -71,6 +71,11 @@ driver.switch_to.window(driver.window_handles[0])
 driver.close()
    ```
 
+## Preview of the automation
+An overview of the automation that is accomplished by this script can be found below. I used 'Game Bar' recorder of Windows 10 for this
+recording ( which I eventually turned to a GIF online ).
+![](web_automation.gif)
+
 ## Tip
 - The key to successful automation involves looking up the HTML DOM and understanding how to recognise the elements like Search Boxes and Buttons.
   - Debugger is your friend.
