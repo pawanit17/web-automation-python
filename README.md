@@ -38,39 +38,39 @@ driver = webdriver.Chrome('./chromedriver.exe') # I had the exe on the same loca
    ```bash
 driver.get("https://www.wikipedia.org/")
    ```
-   
+
 ### Language seletion on the Wikipedia page
    ```bash
 english_version_wiki = driver.find_element_by_id('js-link-box-en')
 english_version_wiki.click()
    ```
-   
+
 ### Web Page Load Wait
    ```bash
 WebDriverWait(driver,20).until(EC.presence_of_element_located((By.XPATH,"//title[text()='Wikipedia, the free encyclopedia']")))
    ```
-   
+
 ### Enter Search Criterion & Searching
    ```bash
 search_text_field = driver.find_element_by_id('searchInput')
 search_text_field.send_keys('Pulp Fiction')
 driver.find_element_by_id('searchButton').click()
    ```
-   
+
 ### Opening a new tab in Chrome & switching focus to it
    ```bash
 driver.execute_script("window.open('');")
 driver.switch_to.window(driver.window_handles[1])
 driver.get("https://github.com/")
    ```
-   
+
 ### Closing second tab & the main tab - close of Chrome application itself.
    ```bash
 driver.close()
 driver.switch_to.window(driver.window_handles[0])
 driver.close()
    ```
-   
+
 ## Tip
 - The key to successful automation involves looking up the HTML DOM and understanding how to recognise the elements like Search Boxes and Buttons.
   - Debugger is your friend.
