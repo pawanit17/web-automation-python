@@ -25,6 +25,8 @@ https://pypi.org/project/selenium/
    ```bash
    pip install PyInstaller
    ```
+
+```pyinstaller --onefile filename.py``` can be used to build an exe from a python file.
  
 ## Automating an activity on a website
 The following steps are the main action sequences for realizing an automation with Python
